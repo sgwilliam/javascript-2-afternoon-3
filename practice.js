@@ -118,7 +118,6 @@ contains(names, 'Colt', function(result){
 */
 
 function uniq(arr, callback){
-  let indexNumber
     for(i = arr.length - 1; i >= 0; i--){
       for(j = 0; j < arr.length; j++){
         if(i !== j){
@@ -130,7 +129,7 @@ function uniq(arr, callback){
     callback(arr)
   }
 }
-// let [1, 3, 4, 6, 4, 2, 5, 7, 8, 4, 3, 2, 3]
+// let [1, , 4, 6, 4, 2, 5, 7, 8, 4, , 2, 3]
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
